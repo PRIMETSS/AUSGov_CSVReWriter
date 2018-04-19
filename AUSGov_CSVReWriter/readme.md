@@ -8,4 +8,3 @@ If not compiling from source code copy this folder to your PC and run ausgov_csv
 Please file to be converted in this folder also, and modify config.xml as required
 
 [https://github.com/PRIMETSS/AUSGov_CSVReWriter/tree/master/AUSGov_CSVReWriter/bin/Release/netcoreapp2.0/publish]
-
