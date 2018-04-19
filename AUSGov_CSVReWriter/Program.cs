@@ -8,18 +8,69 @@ namespace AUSGov_CSVReWriter
     class Program
     {
         private static AUSGov_CSVReWriter.Config.ConfigHelper _configHelper;
+        // Command line option Config file location
+        public static string _CLIOption_GlobalConfigFileLocation = null;
+        // Skip Wiring Processing execution for help/info display type commands
+        private static bool _CLIOption_SkipExecution = false;
 
         static void Main(string[] args)
         {
-            Console.WriteLine("AUSGov_CSVReWriter starting...");
+            Console.WriteLine("AUSGov_CSVReWriter starting... (-h for help)");
 
-            _configHelper = AUSGov_CSVReWriter.Config.ConfigHelper.LoadConfig("D:\\DATA\\My Projects\\2018\\_Trial\\AUSGov_CSVReWriter\\AUSGov_CSVReWriter\\config.xml");
-
-            if (_configHelper != null)
+            // Command line Options
+            int arg_index = 0;
+            foreach (string arg in args)
             {
-                ProcessFile();
+                switch (arg)
+                {
+                    case "-h":
+                        Display_UsageArgs();
+                        _CLIOption_SkipExecution = true;
+                        break;
+                    case "-v":
+                        Display_Version();
+                        _CLIOption_SkipExecution = true;
+                        break;
+                    case "-c":
+                        _CLIOption_GlobalConfigFileLocation = args[arg_index + 1];
+                        break;
+
+                }
+                arg_index++;
             }
 
+            // If processing file
+            if (!_CLIOption_SkipExecution)
+            {
+                // Load Config
+                _configHelper = AUSGov_CSVReWriter.Config.ConfigHelper.LoadConfig(_CLIOption_GlobalConfigFileLocation);
+
+                if (_configHelper != null)
+                {
+                    Console.WriteLine($"Main: Config loaded, Trying to process file");
+                    ProcessFile();
+                    Console.WriteLine($"Main: Finished");
+                }
+            }
+        }
+
+        private static void Display_UsageArgs()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"Usage: {System.Reflection.Assembly.GetEntryAssembly().GetName().Name} [options]");
+            Console.WriteLine("\nOptions:\n");
+            Console.WriteLine("\t-h\t\tDisplay help");
+            Console.WriteLine("\t-v\t\tDisplay version infomation");
+            Console.WriteLine("\t-c <path>\tConfig.xml path");
+        }
+
+        /// <summary>
+        /// Outputs application version information to command line
+        /// </summary>
+        private static void Display_Version()
+        {
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"{System.Reflection.Assembly.GetEntryAssembly().GetName().Name} [Version: {System.Reflection.Assembly.GetEntryAssembly().GetName().Version}]");
         }
 
         static void ProcessFile()
@@ -67,6 +118,7 @@ namespace AUSGov_CSVReWriter
                 WriteCSVLine(_streamWriter, final);
             }
 
+            Console.WriteLine($"ProcessFile: Output file {_configHelper.OutputFileName} created");
             _streamWriter.Close();
 
         }

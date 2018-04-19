@@ -10,3 +10,4 @@ D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\
 D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.dll
 D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.pdb
 D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\DgrEndorsedEntities.txt
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\Config.xml

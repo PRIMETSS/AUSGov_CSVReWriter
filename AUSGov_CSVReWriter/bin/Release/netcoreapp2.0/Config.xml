@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Usage:
+    
+        Input:        
+          CompanyName ABN           Phone       State
+          ABC Company 000-000-000   61888-8888  SA
+        
+        Config example:
+        
+          <Field Name="CompanyName" FixSize=""/><Skip Condition="1"/><Field Name="ABN"/><Skip Condition="*"/><Field Name="Phone"/><Skip Condition="*"/><Field Name="State"/><Skip Condition="*"/>
+        
+        Condition:
+         
+          '*': Any # of white space or null
+          '1': # of white space or null chars to skip
+-->
+<Config FirstRowIsHeader="true" InputFileName="DgrEndorsedEntities.txt" OutputFileName="output.csv" DelimitOnWhiteSpace="true" WhiteSpaceExpression=" {2,}" DelimitCharacter=",">
+  <ColumnDefinitions>
+    <Column>
+      <Field Name="ABN" IsFixedSize="true" DelimitPossition="12"/>
+    </Column>
+    <Column>
+      <Field Name="ABN Status"/>
+    </Column>
+    <Column>
+      <Field Name="DGR Status Date"/>
+    </Column>
+    <Column>
+      <Field Name="State"/>
+    </Column>
+    <Column>
+      <Field Name="PostCode"/>
+    </Column>
+    <Column>
+      <Field Name="Entity Name"/>
+    </Column>
+    <Column>
+      <Field Name="Item" IsFixedSize="true" DelimitPossition="272"/>
+    </Column>
+    <Column>
+      <Field Name="ItemType"/>
+    </Column>
+  </ColumnDefinitions>
+</Config>
