@@ -1,0 +1,12 @@
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\AUSGov_CSVReWriter.deps.json
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\AUSGov_CSVReWriter.runtimeconfig.json
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\AUSGov_CSVReWriter.runtimeconfig.dev.json
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\AUSGov_CSVReWriter.dll
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\AUSGov_CSVReWriter.pdb
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.csprojAssemblyReference.cache
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.csproj.CoreCompileInputs.cache
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.AssemblyInfoInputs.cache
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.AssemblyInfo.cs
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.dll
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\obj\Debug\netcoreapp2.0\AUSGov_CSVReWriter.pdb
+D:\DATA\My Projects\2018\_Trial\AUSGov_CSVReWriter\AUSGov_CSVReWriter\bin\Debug\netcoreapp2.0\DgrEndorsedEntities.txt
